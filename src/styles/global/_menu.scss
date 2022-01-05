@@ -1,0 +1,53 @@
+.menu{
+
+    background-color: $color-secondary;
+    opacity: 0.80;
+    min-width: 3%;
+    box-shadow: 1px 1px 25px #100f0f;
+    transition: .8s ease;
+    
+    .menu-link{
+        margin-top: 20vh;
+        
+        #menu-link-items{
+            max-height: 60vh;
+            overflow-y: scroll;
+            scrollbar-width: none;
+
+        }
+    }
+}
+
+#menu:hover, .menu-hover{
+    min-width: 25%;
+}
+
+button {
+    background-color: $color-secondary;
+    color: $font-color;
+    width: 100%;
+    li{
+        font-size: $font-size;
+        height: 12.5%;
+        padding-left: 10vh;
+        line-height: 12.5vh;
+        text-align: left;
+
+    }
+}
+
+
+button:hover, .btn-focus{
+    background-color: #545454;
+    
+}
+
+.btn-selected{
+    background-color: #7d8083;
+    li{
+        box-shadow: 1px 10px 25px #100f0f;
+    }
+}
+
+
+

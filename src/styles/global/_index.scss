@@ -1,0 +1,21 @@
+body{
+    font-family: $font-family;
+    color: $font-color;
+    background-color: $color-primary;
+
+    #hero{
+        display: flex;
+        
+        #main{
+            padding-top: 150px;
+            max-height: 100vh;
+            min-width: 100%;
+            overflow-y: scroll;
+            scrollbar-width: none;
+        }
+    }
+}
+
+.blur{
+    filter: blur(20px);
+}
