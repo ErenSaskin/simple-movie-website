@@ -91,7 +91,8 @@ var Col = (function(){
                         break;
                 }
             }
-            console.log(selectedChild);
+            selectedChild.parentElement.focus();
+
         }
         else if(Index.getTarget() != document.getElementById("detail")){
             selectedChild = null;

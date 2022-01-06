@@ -589,6 +589,8 @@ body #hero #main {
 }
 
 .menu .menu-link #menu-link-items {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   max-height: 60vh;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -599,6 +601,7 @@ body #hero #main {
 }
 
 button {
+  scroll-snap-align: center;
   background-color: #4a4a4a;
   color: white;
   width: 100%;
@@ -644,15 +647,17 @@ button:hover, .btn-focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
   overflow-x: scroll;
   overflow-y: hidden;
   scrollbar-width: none;
 }
 
 #col .card {
+  scroll-snap-align: center;
   padding: 20px 15px 20px 15px;
-  min-width: 26vh;
-  max-width: 26vh;
+  min-width: 240px;
   height: 40vh;
   -webkit-transition: .5s ease;
   transition: .5s ease;

@@ -10,6 +10,7 @@
         margin-top: 20vh;
         
         #menu-link-items{
+            scroll-snap-type: y mandatory;
             max-height: 60vh;
             overflow-y: scroll;
             scrollbar-width: none;
@@ -23,6 +24,7 @@
 }
 
 button {
+    scroll-snap-align: center;
     background-color: $color-secondary;
     color: $font-color;
     width: 100%;
